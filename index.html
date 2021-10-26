@@ -6,15 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To_do_List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <div class="container">
-        <h1>My To Do App</h1>
-        <h3>Enter your Task(one click cross text,double click remove text)</h3>
-        <input type="text" name="addTask" id="addTask" placeholder="Type a new task">
-        <button id="addToDo">+</button>
-        <div id="todoContainer"></div>
+        <div id="myDIV" class="header">
+            <h2 style="margin:5px">My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Title a new task..">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+            <li>
+                </i>Make Bed</li>
+            <li class="checked">Pick up clutter around the house</li>
+            <li>Clean what dishes are in the sink after breakfast</li>
+            <li>Spend 30 minutes in the garden or flowerbed</li>
+            <li>Walk the dog</li>
+            <li>Shower</li>
+            <li>read a book that's not an ebook</li>
+        </ul>
     </div>
+    <script src="index.js"></script>
+</body>
