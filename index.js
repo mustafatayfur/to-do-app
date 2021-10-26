@@ -23,14 +23,9 @@ for (i = 0; i < close.length; i++) {
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
         if (ev.target.tagName === 'LI') {
-            var icon = document.createElement("i");
-            var txt = document.createTextNode("\uf164");
-            icon.className = "checked";
-            icon.appendChild(txt);
-            // ev.target.classList.toggle('checked');
-            ev.target.appendChild(icon);
+            ev.target.classList.toggle('checked');
         }
-    }
+    },
     false);
 
 // Create a new list item when clicking on the "Add" button
