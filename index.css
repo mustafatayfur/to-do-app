@@ -33,6 +33,7 @@ ul {
 }
 
 ul li {
+    height: auto;
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -75,16 +76,12 @@ ul li.checked {
 /* Add a "checked" mark when clicked on */
 
 ul li.checked::before {
-    content: '';
     position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0px 2px 2px 0;
     top: 10px;
     left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+    height: 55px;
+    width: 45px;
+    content: '👍';
 }
 
 

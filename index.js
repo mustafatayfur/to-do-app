@@ -24,7 +24,15 @@ var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
         if (ev.target.tagName === 'LI') {
             ev.target.classList.toggle('checked');
-        }
+            
+
+            // let thumb = document.createElement("SPAN");
+            // this.innerText = String.fromCodePoint(&#x1F44D); 
+            // thumb.className = "thumbs";
+            //     // span.appendChild(txt);
+            // ev.target.appendChild(thumb);
+        }             
+        
     },
     false);
 
@@ -54,6 +62,11 @@ function newElement() {
         }
     }
 }
+let addButton = document.querySelector(".addBtn");
+addButton.addEventListener("click", newElement);
+window.addEventListener("keyup", function(event) {
+    if (event.code == "Enter" || event.code == "NumpadEnter") { newElement(event.code); }
+  });
 
 
 
